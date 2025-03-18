@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid maroon;
+      }
+      th {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>ENGA GRAPHICS</h2>
+      <nav>
+        <ul>
+          <li id="#home">Home</li>
+          <li id="#about">About</li>
+          <li id="#contacts">Contacts</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h4>Do you have any graphics that need to be handled?</h4>
+      <p>You have just landed at the right spot</p>
+      <img
+        src="https://images.pexels.com/photos/3778622/pexels-photo-3778622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Office work station"
+        width="400"
+        height="500"
+      />
+    </section>
+
+    <section id="about">
+      <h4>Graphic design services offerred</h4>
+      <ol type="I">
+        <li>Poster Design</li>
+        <li>Flyer design</li>
+        <li>Tri-fold brochure design</li>
+        <li>Social media posts</li>
+      </ol>
+    </section>
+
+    <section id="contacts">
+      <h4>A wide array of contacts that you can choose from</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile phone</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lizzie Wanyoike</td>
+            <td>lizzie, Nairobi</td>
+            <td>0711111111</td>
+            <td>lizzie@master.gmail.com</td>
+          </tr>
+          <tr>
+            <td>Lizzie Wanyoike</td>
+            <td>lizzie, Nairobi</td>
+            <td>0711111111</td>
+            <td>lizzie@master.gmail.com</td>
+          </tr>
+          <tr>
+            <td>Lizzie Wanyoike</td>
+            <td>lizzie, Nairobi</td>
+            <td>0711111111</td>
+            <td>lizzie@master.gmail.com</td>
+          </tr>
+          <tr>
+            <td>Lizzie Wanyoike</td>
+            <td>lizzie, Nairobi</td>
+            <td>0711111111</td>
+            <td>lizzie@master.gmail.com</td>
+          </tr>
+          <tr>
+            <td>Lizzie Wanyoike</td>
+            <td>lizzie, Nairobi</td>
+            <td>0711111111</td>
+            <td>lizzie@master.gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Registration form</h4>
+      <form action="#">
+        <!--Field for name-->
+        <label for="name">Full names</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Eugene Ambagwa"
+          required
+        />
+        <br /><br />
+
+        <!--Fiel for email-->
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="eugeneambagwa@gmmail.com"
+          required
+        />
+        <br /><br />
+
+        <!--Label for password-->
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter a strong password"
+          required
+        />
+        <br /><br />
+
+        <!--Field for date-->
+        <label for="date">Date of Birth (DOB)</label>
+        <input type="date" name="date" id="dob" required />
+        <br /><br />
+
+        <!--Dropdown-->
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+          <option value="">Select your country</option>
+          <option value="ke">Kenya</option>
+          <option value="tz">Tanzania</option>
+          <option value="za">South Africa</option>
+          <option value="eth">Ethiopia</option>
+        </select>
+        <br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading" />
+        <label for="reading">Reading</label>
+        <br /><br />
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </body>
+</html>
